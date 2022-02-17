@@ -1,0 +1,36 @@
+.fa-exclamation-circle {
+  color: tomato;
+  margin-left: 5px;
+}
+
+.more-screen {
+  margin: 0px var(--horizontal-space);
+}
+
+.more-icon {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 35px -10px;
+}
+
+.more-icon span {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.more-icon__line {
+  justify-content: left;
+}
+
+.more-icon__line div {
+  margin-right: 17px;
+}
+
+.suggestion {
+  border-top: var(--border-line);
+  padding-top: 20px;
+}
+
+.fa-quote .fa-dog {
+  background-color: #fbe300;
+  color: whitesmoke;
+}

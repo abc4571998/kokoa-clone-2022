@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - KakaoTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>21:23</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-lock"></i>
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span
+          ><i class="fas fa-cog fa-2x"></i>
+          <span class="find-setting__alarm"></span
+        ></span>
+      </div>
+    </header>
+
+    <div class="icon-row">
+      <div class="icon-row__column">
+        <i class="fas fa-qrcode fa-2x"></i>
+        <span>QR Code</span>
+      </div>
+      <div class="icon-row__column">
+        <i class="far fa-address-book fa-2x"></i>
+        <span>Add by Contacts</span>
+      </div>
+      <div class="icon-row__column">
+        <i class="far fa-id-card fa-2x"></i>
+        <span>Add by ID</span>
+      </div>
+      <div class="icon-row__column">
+        <i class="far fa-envelope fa-2x"></i>
+        <span>Invite</span>
+      </div>
+    </div>
+
+    <div class="recommanded-friends">
+      <span class="recommanded-friends__title">Recommanded Friends</span>
+      <div class="recommanded-friends__text">
+        You have no recommended friends.
+      </div>
+    </div>
+
+    <div class="open-chat">
+      <div class="open-chat__header">
+        <div class="open-chat__header-title">Open Chat</div>
+        <div class="open-chat__header-text">
+          <span>Go to Openchat Home</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <div class="open-post">
+        <div class="open-post__column">
+          <div class="open-post__text">
+            <div class="open-post__title">#BTS</div>
+            <div class="open-post__tag">#BTS#ARMY#FRIENDS</div>
+            <div class="open-post__user">
+              <img src="img/song.jpeg" />
+              <span class="open-post__user-member">802 members</span>
+              <span class="open-post__user-active">Active</span>
+            </div>
+          </div>
+        </div>
+        <div class="open-post__column">
+          <img
+            class="open-post__image"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8cHBwAAAAICAgXFxcaGhqVlZW+vr64uLiCgoI3Nzfl5eXv7+8QEBAnJyd5eXlkZGQvLy/4+PhdXV3IyMjT09NERESqqqqNjY3c3Nzp6ekgICBpaWnV1dV8fHydnZ1NTU26urpUVFRxcXE8PDxCL34jAAAEmUlEQVR4nO3b63aiMBQF4BCClyqOF6xatdra93/GsR0rOSE5CUjAtWZ//2qTBdtAJBeEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD43w0cTsNptfBu6ypetZ1Uqk8+TvQYxbKDhNLtPDQLL5nSFWbl0cJSaL6OnjDNEhclz29G6ffUWdqQjmnN3YtUlmK5vMRuRybh9/GNr3gtQxPKI6lYyNxVcGG5HTpLeG3GHS2+sDWEreKLEdB9mFzFbUU+YaISWnwQ2IjypNeaMgGvF/RnnwkTuSXFJ6EJSU964G9fOeozYSbpbfIadJnmZ73OzvO1qFmfCRO5IeU3QY1IK219dcwOrduE+YqUn4YlJJ2Ht92NW6HjhOYlNHd1+/q3ctBrLNl+5qf8vKOE6v6oQb5g2pkP9UcSUk5T0IS2YnrnY/y2REuoXqaTH2/kZjMSiskdKSc3b+V/SAVyYcvRrdhY+7S7hPdPV9qlaCbUfOgJK0+xv/SE2vW7tx65ffaE87CEo9oJ0z/3j2fKduT2ISESIqFAQiR8GBLGS7hP81/poqU0Nv0lnK9KB1fdFnScMI+Zxa7jhHGH81YdJCSjJ3exWDpIKHJtDJpJc5Y5Nm9C7roKTHjWpwWUMfETnT3hoTwnY56GCExozETJ152zaAT2hOfy15jO7VKBCY/G7FUedebJpCXMFsXwR3HRz5xZVghMSC/Tn8JJ4S7dspT0Ajd6PzNmKocmrC7oKHmJvCBz51u3YHrS8ITiUomYpHHn8ku+tacjVzk4ofiqzrJm8rOTZqy3fmgITzidWSaS805+/rmE+cHzJYcnvEa0rD9l7F3eEjbhJ3uN1kooxMq24iHP0TcreK5S/oerVkIxsK3kp1+9ruNfz5tdM6mXUKz3lmZMv1rLYuddA35nKtdMKMTY0oySeSxsg3+FlHn6qJ1QFItqM0Z+FLc905Bej5slqp9QLKvNaC6kt4w8l66Lb0N6EkwjNkh4vRsrzRj3Qdw6ttgpLaI2eWRqlPB7NEWbMcsey8Czj54K7dQz5azcMKFYz4wRY8yRhj0h2VxQ2YN31zShOSiWg8bn7+dIeNEHUM6OoHlCUjXJL43P38+R8E8aOSHZ5qhem55+gN4S6vvHeli36CBhzzsVWk04zRd3s/IhsN+1p3YTSnUnn2V1reWEZamnWT9Ewhsk/AcJkfBBSIiESCieNeGhxfEh2W1SjgT7efJe3gzJ9okWEyZpcTvEoIfRk7ZXn9usr2mw2ySzHaKzhA6PztPQtxFsuN0QD/MnZKYYAkfAT/7ODDcRFphw7HvztKvZRNfhq68s/2q428SU7WMk++VNmDIzfaHzNCv+Xam4SzP+9w+ZfWihCd/YRsxjziV6E2bsLRI81zZkXl9TcZeevLtN2DnC8NnED+u76t/Svfs+bwWXUMkXfo9djfnS497ajEquYm+qkTK1uz51zHw9wEir7JsRXp5yaRzs+vdr/P1tY5ftxr9Hcv1eln/3v8t73GzJIQajrnfTAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8r786A0Wfkh1mEgAAAABJRU5ErkJggg=="
+          />
+          <div class="open-post__like">
+            <i class="fas fa-heart"></i>
+            <span>326</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="open-post">
+        <div class="open-post__column">
+          <div class="open-post__text">
+            <div class="open-post__title">Bts Gang~</div>
+            <div class="open-post__tag">
+              #englishonly #ipurpleyou #jimin #taeta...
+            </div>
+            <div class="open-post__user">
+              <img src="img/song.jpeg" />
+              <span class="open-post__user-member">299 members</span>
+              <span class="open-post__user-active">Active</span>
+            </div>
+          </div>
+        </div>
+        <div class="open-post__column">
+          <img
+            class="open-post__image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHMcYmlTHPThbTh05U4eSV9DOz81rObUYhdA&usqp=CAU"
+          />
+          <div class="open-post__like">
+            <i class="fas fa-heart"></i>
+            <span>215</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><i class="fas fa-ellipsis-h fa-2x"></i>
+            <span class="nav__alarm"></span
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
